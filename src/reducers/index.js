@@ -1,6 +1,15 @@
-import { combineReducers } from 'redux'
-import common from './common'
+import types from "./../ref/types";
 
-export default combineReducers({
-    common,
-})
+const reducer = (state = {}, action) => {
+  switch (action.type) {
+    case types.SET_TICKET:
+      return {
+        ...state,
+        ticket: action.data,
+      };
+    default:
+      return state;
+  }
+};
+
+export default reducer;

@@ -1,0 +1,55 @@
+.ticket {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  margin: 10px 0px;
+  border-radius: 50%;
+  background-color: #f2f2f2;
+  color: #c6c6c6;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .waiting {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    bottom: 0px;
+    right: 0px;
+    background-color: #c60000;
+    border-radius: 50%;
+    border: solid 1px #ffffff;
+  }
+  .delay {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    bottom: 0px;
+    right: 0px;
+    background-color: #ffde25;
+    border-radius: 50%;
+    border: solid 1px #ffffff;
+    &::after {
+      position: absolute;
+      content: "";
+      width: 1px;
+      height: 6px;
+      background-color: #ffffff;
+      left: 7px;
+      top: 2px;
+    }
+    &::before {
+      position: absolute;
+      content: "";
+      width: 6px;
+      height: 1px;
+      background-color: #ffffff;
+      left: 7px;
+      top: 7px;
+    }
+  }
+  &.selected {
+    background-color: #000000;
+    color: #ffffff;
+  }
+}

@@ -1,5 +1,6 @@
-const SET_LANGUAGE = 'SET_LANGUAGE';
+/* eslint import/no-anonymous-default-export: [2, {"allowObject": true}] */
+const SET_TICKET = "SET_TICKETE";
 
 export default {
-    SET_LANGUAGE,
+  SET_TICKET,
 };
