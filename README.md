@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+# <a href="https://wesley16838.github.io/stuff_assessment/" target="_blank">stuff_assessment</a>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> Stuff_assessment
 
-## Available Scripts
+> A ticketing system
 
-In the project directory, you can run:
+[![npm version](https://img.shields.io/npm/v/if-node-version.svg?style=flat)](https://www.npmjs.com/package/if-node-version)
+[![Node version](https://img.shields.io/node/v/if-node-version.svg?style=flat)](https://www.npmjs.com/package/if-node-version)
+[![Build Status](https://travis-ci.org/mysticatea/if-node-version.svg?branch=master)](https://travis-ci.org/mysticatea/if-node-version)
 
-### `npm start`
+[![INSERT YOUR GRAPHIC HERE](page.png)]()
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- The left panel contains the tickets that are assigned to the user, the black
+  one is the selected ticket that the user is working on, the ticket with a red
+  dot is the ticket that has a new message, and the ticket with a yellow dot is
+  the one you snoozed it.
+- On the gray panel (Classify panel): the user has to give a name to that
+  ticket from the provided text field with characters counter beneath it. The
+  maximum number of characters is 25.
+- While you are typing in the text field, the characters’ counter will start
+  counting down by the current text length. If the counter is less than 0, view
+  it as a negative number with red color and disable the proceed button.
+  Besides, the Proceed button will be enabled just if there is a selected goal
+  from the list and text inside the input. Title and goal fields have to be
+  stored in the relevant object attributes.
+- In the white panel, the conversation box (at the bottom) will be disabled at
+  the first and will be enabled only after saving the goal and title of the ticket.
+  When you press on the enabled conversation box, enlarge it to an
+  appropriate size (use your design skills). Clicking on the “Send” button
+  should remove the text from the conversation input.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+---
 
-### `npm test`
+## Table of Contents
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [Installation](#installation)
+- [Features](#features)
+- [Team](#team)
+- [License](#license)
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Clone
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Clone this repo to your local machine using `https://github.com/Wesley16838/stuff_assessment.git`
 
-### `npm run eject`
+### Setup
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+> Open the terminal in the Visual Studio
+> and run the code in the terminal as follows:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```shell
+$ npm i
+$ npm start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+> Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+---
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## License
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **[MIT license](http://opensource.org/licenses/mit-license.php)**
