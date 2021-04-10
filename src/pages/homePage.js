@@ -51,6 +51,7 @@ const HomePage = (props) => {
       Goal: "",
     });
     setDisable(false);
+    setNumber(25);
   };
 
   return (
