@@ -35,13 +35,5 @@ let preloadedState = {
   ],
 };
 
-const store = createStore(
-  reducer,
-  preloadedState,
-  compose(
-    window.__REDUX_DEVTOOLS_EXTENSION__ &&
-      window.__REDUX_DEVTOOLS_EXTENSION__(),
-    applyMiddleware(thunkMiddleware)
-  )
-);
+const store = createStore(reducer, preloadedState);
 export default store;
